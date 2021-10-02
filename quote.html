@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Smarty - Multipurpose + Admin</title>
+		<meta name="description" content="" />
+		<meta name="Author" content="Dorin Grigoras [www.stepofweb.com]" />
+		
+
+		<!-- mobile settings -->
+		<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
+		<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+
+		<!-- WEB FONTS : use %7C instead of | (pipe) -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600%7CRaleway:300,400,500,600,700%7CLato:300,400,400italic,600,700" rel="stylesheet" type="text/css" />
+
+		<!-- CORE CSS -->
+		<link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+		<!-- REVOLUTION SLIDER -->
+		<link href="assets/plugins/slider.revolution/css/extralayers.css" rel="stylesheet" type="text/css" />
+		<link href="assets/plugins/slider.revolution/css/settings.css" rel="stylesheet" type="text/css" />
+
+		<!-- THEME CSS -->
+		<link href="assets/css/essentials.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/layout.css" rel="stylesheet" type="text/css" />
+
+		<!-- PAGE LEVEL SCRIPTS -->
+		<link href="assets/css/header-1.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/color_scheme/red.css" rel="stylesheet" type="text/css" id="color_scheme" />
+	</head>
+
+	<!--
+		AVAILABLE BODY CLASSES:
+		
+		smoothscroll 			= create a browser smooth scroll
+		enable-animation		= enable WOW animations
+
+		bg-grey					= grey background
+		grain-grey				= grey grain background
+		grain-blue				= blue grain background
+		grain-green				= green grain background
+		grain-blue				= blue grain background
+		grain-orange			= orange grain background
+		grain-yellow			= yellow grain background
+		
+		boxed 					= boxed layout
+		pattern1 ... patern11	= pattern background
+		menu-vertical-hide		= hidden, open on click
+		
+		BACKGROUND IMAGE [together with .boxed class]
+		data-background="assets/images/_smarty/boxed_background/1.jpg"
+	-->
+	<body class="smoothscroll enable-animation">
+
+		<!-- SLIDE TOP -->
+		<div id="slidetop">
+
+			<div class="container">
+				
+				<div class="row">
+
+					<div class="col-md-4">
+						<h6><i class="icon-heart"></i> WHY SMARTY?</h6>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus nulla, commodo a sodales sed, dignissim pretium nunc. Nam et lacus neque. Ut enim massa, sodales tempor convallis et, iaculis ac massa. </p>
+					</div>
+
+					<div class="col-md-4">
+						<h6><i class="fa-facheck"></i> RECENTLY VISITED</h6>
+						<ul class="list-unstyled">
+							<li><a href="#"><i class="fa fa-angle-right"></i> Consectetur adipiscing elit amet</a></li>
+							<li><a href="#"><i class="fa fa-angle-right"></i> This is a very long text, very very very very very very very very very very very very </a></li>
+							<li><a href="#"><i class="fa fa-angle-right"></i> Lorem ipsum dolor sit amet</a></li>
+							<li><a href="#"><i class="fa fa-angle-right"></i> Dolor sit amet,consectetur adipiscing elit amet</a></li>
+							<li><a href="#"><i class="fa fa-angle-right"></i> Consectetur adipiscing elit amet,consectetur adipiscing elit</a></li>
+						</ul>
+					</div>
+
+					<div class="col-md-4">
+						<h6><i class="icon-envelope"></i> CONTACT INFO</h6>
+						<ul class="list-unstyled">
+							<li><b>Address:</b> PO Box 21132, Here Weare St, <br /> Melbourne, Vivas 2355 Australia</li>
+							<li><b>Phone:</b> 1-800-565-2390</li>
+							<li><b>Email:</b> <a href="mailto:support@yourname.com">support@yourname.com</a></li>
+						</ul>
+					</div>
+
+				</div>
+
+			</div>
+
+			<a class="slidetop-toggle" href="#"><!-- toggle button --></a>
+
+		</div>
+		<!-- /SLIDE TOP -->
+
+
+		<!-- wrapper -->
+		<div id="wrapper">
+
+			<!-- 
+				AVAILABLE HEADER CLASSES
+
+				Default nav height: 96px
+				.header-md 		= 70px nav height
+				.header-sm 		= 60px nav height
+
+				.b-0 		= remove bottom border (only with transparent use)
+				.transparent	= transparent header
+				.translucent	= translucent header
+				.sticky			= sticky header
+				.static			= static header
+				.dark			= dark header
+				.bottom			= header on bottom
+				
+				shadow-before-1 = shadow 1 header top
+				shadow-after-1 	= shadow 1 header bottom
+				shadow-before-2 = shadow 2 header top
+				shadow-after-2 	= shadow 2 header bottom
+				shadow-before-3 = shadow 3 header top
+				shadow-after-3 	= shadow 3 header bottom
+
+				.clearfix		= required for mobile menu, do not remove!
+
+				Example Usage:  class="clearfix sticky header-sm transparent b-0"
+			-->
+			<div id="header" class="navbar-toggleable-md sticky header-md clearfix">
+
+				<!-- TOP NAV -->
+				<header id="topNav">
+					<div class="container">
+
+						<!-- Mobile Menu Button -->
+						<button class="btn btn-mobile" data-toggle="collapse" data-target=".nav-main-collapse">
+							<i class="fa fa-bars"></i>
+						</button>
+
+						<!-- Logo -->
+						<a class="logo float-left scrollTo" href="#top">
+							<img src="assets/images/Rocket_ Elevator_Assets/R2.png" alt="" />
+						</a>
+
+						<!-- 
+							Top Nav 
+							
+							AVAILABLE CLASSES:
+							submenu-dark = dark sub menu
+						-->
+						<div class="navbar-collapse collapse float-right nav-main-collapse submenu-dark">
+							<nav class="nav-main">
+
+								<!-- 
+									.nav-onepage
+									Required for onepage navigation links
+									
+									Add .external for an external link!
+								-->
+								<ul id="topMain" class="nav nav-pills nav-main nav-onepage">
+									<li class="active"><!-- HOME -->
+										<a href="index (2).html">
+											HOME
+										</a>
+									</li>
+									<li><!-- SERVICES -->
+										<a href="index (2).html#services">
+											SERVICES
+										</a>
+									</li>
+									<li><!-- PORTFOLIO -->
+										<a href="index (2).html#portfolio">
+											PORTFOLIO
+
+										</a>
+									</li>
+									<li><!-- NEWS -->
+										<a href="index (2).html#news">
+											NEWS
+										</a>
+									</li>
+									<li><!-- CLIENTS -->
+										<a href="index (2).html#clients">
+											CLIENTS
+										</a>
+									</li>
+									<li><!-- CONTACT -->
+										<a href="index (2).html#contact">
+											CONTACT
+										</a>
+									</li>
+								</ul>
+
+							</nav>
+						</div>
+
+					</div>
+				</header>
+				<!-- /Top Nav -->
+	<!-- /Quote -->
+			</div>
+		</div>
+		<!-- /PAGE HEADER -->
+
+
+
+
+
+			<section class="section-sm alternate">
+				<div class="container">
+
+					<header class="text-center">
+						<h2 class="fs-25">Request a Quote</h2>
+						<p class="fw-300 mb-0">NOT SURE WhICH PRODUCT OR SERVICE IS RIGHT FOR YOU? FILL OUT THIS FORM</p>
+					</header>
+
+				</div>
+			</section>
+
+<!-- /quote section -->
+
+			<section>
+					
+					<h1>Building Type</h1>
+			
+							 <select id="building_type" name='filling'
+							 onchange="function select_building()">
+							 <option value="None"->---Select---</option>
+							 <option value="residential">Residential</option>
+							 <option value="commercial">Commercial</option>
+							 <option value="corporate">Corporate</option>
+							 <option value="hybrid">Hybrid</option>
+							</select>
+							 <br/>
+							 <p>
+					
+					</div>
+					
+					</ul>
+				<!-- /quote section -->
+								
+
+								<p class="alert alert-transparent fs-13 radius-0">
+									NOTE: Please select a building type.
+								</p>
+
+
+								<div id="residential"> 
+									<div class="col-sm-4">
+
+											<label>number of apartments</label>
+											<input type="number" id="number-of-apartments" name="number of apartments" 
+       											min="1" max="100">
+
+
+											<label>number of floors</label>
+											<input type="number" id="number-of-floors" name="number of floors" 
+       											min="1" max="100">
+
+
+
+											<label>number of basements</label>
+											<input type="number" id="number-of-basements" name="number of basements" 
+       											min="1" max="100">
+										
+
+												
+												   <label>Elevator amount :</label>
+												   <input type="number" id="elevator-amount" readonly="readonly" disabled="disabled" name="elevator-amount" 
+														  min="1" max="100">
+											
+											</div>
+										</ul>
+									</div>
+									
+									<div id="commercial">
+										<div class="col-sm-4">
+												<label>number of companies</label>
+												<input type="number" id="number-of-companies" name="number of companies" 
+													   min="1" max="100">
+	
+												
+												<label>number of floors</label>
+												<input type="number" id="number-of-floors" name="number of floors" 
+													   min="1" max="100">
+										
+	
+												<label>number of basements</label>
+												<input type="number" id="number-of-basements" name="number of basements" 
+													   min="1" max="100">
+											
+												
+												<label>number of parking spots</label>
+												<input type="number" id="number-of-parking-spots" name="number of parking nspots" 
+													   min="1" max="100">
+											
+												
+												<label>number of elevators</label>
+												<input type="number" id="C-number-of-elevators" name="number of elevators" 
+													   min="1" max="100">
+												
+													   <label>Elevator amount :</label>
+													   <input type="number" id="elevator-amount" readonly="readonly" disabled="disabled" name="elevator-amount" 
+															  min="1" max="100">
+											</div>
+										</ul>
+										</div>
+										<div id="corporate" class="corporate">
+											<div class="col-sm-4">
+		
+													<label>number of corporations</label>
+													<input type="number" id="number-of-corporations" name="number of corporations" 
+														   min="1" max="100">
+		
+													
+													<label>number of floors</label>
+													<input type="number" id="number-of-floors" name="number of floors" 
+														   min="1" max="100">
+										
+		
+													<label>number of basements</label>
+													<input type="number" id="number-of-basements" name="number of basements" 
+														   min="1" max="100">
+										
+												
+													<label>number of parking spots</label>
+													<input type="number" id="number-of-parking-spots" name="number of parking nspots" 
+														   min="1" max="100">
+												
+												
+													<label>maximum occupancy</label>
+													<input type="number" id="maximum-occupancy" name="maximum occupancy" 
+														   min="1" max="100">
+												
+												
+													<label>number of elevators</label>
+													<input type="number" id="C-number-of-elevators" name="number of elevators" 
+														   min="1" max="100">
+
+														   <label>Elevator amount :</label>
+														<input type="number" id="elevator-amount" readonly="readonly" disabled="disabled" name="elevator-amount" 
+															   min="1" max="100">
+												</div>
+												</ul>
+											</div>
+											<div id="hybrid" class="hybrid">
+
+			
+													<div class="col-sm-4">
+			
+														<label>business hours</label>
+														<input type="number" id="business-hours" name="business hours" 
+															   min="1" max="100">
+														
+														<label>number of floors</label>
+														<input type="number" id="number-of-floors" name="number of floors" 
+															   min="1" max="100">
+													
+			
+														<label>number of basements</label>
+														<input type="number" id="number-of-basements" name="number of basements" 
+															   min="1" max="100">
+													
+	
+														<label>number of companies</label>
+														<input type="number" id="number-of-companies" name="number of companies" 
+															   min="1" max="100">
+			
+												
+												
+														<label>number of parking spots</label>
+														<input type="number" id="number-of-parking-spots" name="number of parking nspots" 
+															   min="1" max="100">
+													
+												
+															   <label>Elevator amount :</label>
+															   <input type="number" id="elevator-amount" readonly="readonly" disabled="disabled" name="elevator-amount" 
+																	  min="1" max="100">
+													</div>
+
+											</ul>
+												<script>
+	
+													document.getElementById("building_type").addEventListener("change", function() {
+														var buildingType = document.getElementById("building_type").value;
+														switch (buildingType) {
+														case "residential":
+															document.getElementById("residential").style.display = "block";
+															break;
+														case "commercial":
+															document.getElementById("commercial").style.display = "block";
+															break;
+														case "corporate":
+															document.getElementById("corporate").style.display = "block";
+															break;
+														case "hybrid":
+															document.getElementById("hybrid").style.display = "block";
+															break;			
+														case "residential":
+															document.getElementById("residential").style.display = "block";
+															break;
+														default:console.log(list + "is selected. Chose an option.");
+															break;
+															
+													}
+													});
+
+													function select_building(list) {
+														
+													}
+													document.getElementById("residential").style.display = "none"
+													document.getElementById("commercial").style.display = "none"
+													document.getElementById("corporate").style.display = "none" 
+													document.getElementById("hybrid").style.display = "none"
+		
+												</script>
+
+												
+													
+
+															
+									</div>
+					
+
+							</form>
+					</div>
+				
+			<!-- reset button -->
+
+		</ul>
+		<p>
+		
+			<div class="col-sm-4">
+				<button class ="btn-red"  type="button" onClick="window.location.reload();">---->Click here to change building type</button>
+				</div>
+			</ul>
+			<script>
+
+
+			</script>
+
+				<!-- Product line selection -->
+					</section>
+					
+							<form action="" id="Product line selection" onsubmit="return false;">
+								<fieldset>
+								
+									<legend>Product line selection</legend></p>
+								 <label >Chose the quality of your elevator</label></p>
+								 <input type="radio" id='standard'  name="selectedline" value="standard"
+								 onclick="calculateTotal()" />Standard*<a></p>
+
+								 <input type="radio" id='premium' name="selectedline" value="premium"
+								 onclick="calculateTotal()" />Premium*<a></p>
+
+								 <input type="radio" id='excelium' name="selectedline" value="excelium"
+								 onclick="calculateTotal()" />Excelium*<a>
+								
+								
+							  
+						</div>
+			<!-- Results inputs-->
+		
+		</div>
+		
+		<div class="col-12 hidden-lg hidden-md hidden-sm hidden-xs-down-up">
+			<hr>
+		</div>
+		<script>
+		
+
+		</script>
+		<div id="resultsInputs" class="resultsInputs">
+				
+					
+					<label>Elevator unit price :</label>
+					<input type="number" id="elevator-unit-price" readonly="readonly" disabled="disabled" name="elevator-unit-price" 
+						   min="1" max="100">
+				</div>
+
+					<label>Elevator total price :</label>
+					<input type="number" id="elevator-total-price" readonly="readonly" disabled="disabled" name="elevator-total-price" 
+						   min="1" max="100">
+
+						</div>	
+					</div>
+					
+					<label>Installation fees :</label>
+					<input type="number" id="installation-fees" readonly="readonly" disabled="disabled" name="installation-fees" 
+						   min="1" max="100">
+				</div>
+				</div>
+					
+					<label>Final price :</label>
+					<input type="number" id="final-price" readonly="readonly" disabled="disabled" name="final-price" 
+						   min="1" max="100">
+				</div>
+					</p>
+				
+				
+				</div>
+				
+
+
+			<!-- Results inputs-->					
+			
+			<!-- FOOTER -->
+			<footer id="footer">
+				<div class="container">
+
+
+					<div class="row">
+
+						<!-- col #1 -->
+						<div class="col-md-8">
+
+							<h3 class="letter-spacing-1">WHY US?</h3>
+
+							<!-- Small Description -->
+							<p>
+								As a world leader in home elevators, we understand your connection to your home and we realize the important role our products have in your lives. That's why Rocket Elevator is the only residential elevator company to offer its customers a large selection of products, the industry's best warranty, 24/7 phone support and a network of offices across the world.
+
+							</p>
+							<h2>1800-555-1234</h2>
+						</div>
+						<!-- /col #1 -->
+
+						<!-- col #2 -->
+						<div class="col-md-4">
+							<h3 class="letter-spacing-1">STAY CONNECTED</h3>
+
+							<!-- Newsletter Form -->
+							<p>join over 50 000 people who receive biweekly news and offers</p>
+
+							<form class="validate" action="php/newsletter.php" method="post" data-success="Subscribed! Thank you!" data-toastr-position="bottom-right">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+									<input type="email" id="email" name="email" class="form-control required" placeholder="Enter your Email">
+									<span class="input-group-btn">
+										<button class="btn btn-success" type="submit">Subscribe</button>
+									</span>
+								</div>
+							</form>
+							<!-- /Newsletter Form -->
+
+
+						</div>
+						<!-- /col #2 -->
+
+					</div>
+
+
+				</div>
+
+				<div class="copyright">
+					<div class="container">
+						<ul class="float-right m-0 list-inline mobile-block">
+							<li><a href="#">Terms &amp; Conditions</a></li>
+							<li>&bull;</li>
+							<li><a href="#">Privacy</a></li>
+						</ul>
+						&copy; All Rights Reserved, Company LTD
+					</div>
+				</div>
+
+			</footer>
+			<!-- /FOOTER -->
+
+		</div>
+		<!-- /wrapper -->
+
+
+		<!-- SCROLL TO TOP -->
+		<a href="#" id="toTop"></a>
+
+
+		<!-- PRELOADER -->
+		<div id="preloader">
+			<div class="inner">
+				<span class="loader"></span>
+			</div>
+		</div><!-- /PRELOADER -->
+
+
+		<!-- JAVASCRIPT FILES -->
+		<script>var plugin_path = 'assets/plugins/';</script>
+		<script src="assets/plugins/jquery/jquery-3.3.1.min.js"></script>
+
+		<script src="assets/js/scripts.js"></script>
+		<script src="assets/js/scripts - Copie.js"></script>
+		
+		<!-- STYLESWITCHER - REMOVE -->
+		<script async src="demo_files/styleswitcher/styleswitcher.js"></script>
+
+		<!-- REVOLUTION SLIDER -->
+		<script src="assets/plugins/slider.revolution/js/jquery.themepunch.tools.min.js"></script>
+		<script src="assets/plugins/slider.revolution/js/jquery.themepunch.revolution.min.js"></script>
+		<script src="assets/js/view/demo.revolution_slider.js"></script>
+
+		<!-- PAGELEVEL SCRIPTS -->
+		<script src="assets/js/contact.js"></script>
+
+		<!-- 
+			GMAP.JS 
+			http://hpneo.github.io/gmaps/
+		-->
+		<script src="//maps.google.com/maps/api/js?key=AIzaSyCqCn84CgZN6o1Xc3P4dM657HIxkX3jzPY"></script>
+		<script src="assets/plugins/gmaps.js"></script>
+		<script>
+
+			jQuery(document).ready(function(){
+
+				/**
+					@BASIC GOOGLE MAP
+				**/
+				var map2 = new GMaps({
+					div: '#map2',
+					lat: -12.043333,
+					lng: -77.028333,
+					scrollwheel: false
+				});
+
+				var marker = map2.addMarker({
+					lat: -12.043333,
+					lng: -77.028333,
+					title: 'Company, Inc.'
+				});
+
+			});
+
+		</script>
+	</body>
+</html>
